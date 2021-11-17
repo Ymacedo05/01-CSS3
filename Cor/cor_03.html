@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntando conhecimento. </title>
+    <style>
+
+        *{
+            
+        }
+        body{
+            font: normal 25pt times;
+            color: #ffffff;
+            background-image: linear-gradient(to right, #541961, #AC34C7 ,#D13FF0) ;
+        }
+        h1{
+            background-color: #541961;
+            box-shadow: 5px 5px 10px black;
+
+
+        }
+        div{
+            background-color:;
+
+        }
+        input{
+            font: normal 18pt times;
+        }
+    
+        input#btn{
+            box-shadow: 3px 3px 8px black;
+        }
+
+    </style>
+</head>
+<body onload="">
+    <h1>Olá, Mundo!</h1>
+
+    <div>
+        Nome:
+        <input type="text" name="t1" id="t1"></br>
+        Ano:  
+        <input type="number" name="n1" id="n1">
+        <input type="button" value="Finalizar" id="btn" onclick="clicar()">
+    </div>
+    <div id = "res"></div>
+    <script>
+        function clicar(){
+            
+            var nome = document.getElementById("t1").value
+            var an = document.getElementById("n1")
+            var ano = Number(an.value)
+            var idade = 2021 - ano
+            var res = document.getElementById("res")
+            res.innerHTML=`Olá ${nome}, você tem ${idade} anos.`
+            
+           
+
+        }
+
+        
+    </script>
+    
+</body>
+</html>

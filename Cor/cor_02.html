@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+        *{/* Seleção global CSS */
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(360deg,#3198E2, #823EB5,#D2255D,#FA0501,#FD5C05,#FBD407 );
+            /*  
+                to bottom = Baixo
+                to top = cima
+                to right = Esquerda
+                to left = Direita
+            */
+            /*
+                45deg = 45º graus 
+                circle = em formato de circulo (não funcionou)
+            */
+            /*
+                da para acrescentar porcentagem após as cores para definir o tamanho das faixas.
+            */
+            background-attachment: fixed;
+        }
+        h1{
+            font: normal 30pt times;
+            color: white 
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    
+</body>
+</html>

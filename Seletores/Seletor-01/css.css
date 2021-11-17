@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
+/*
+    em HTML é ID == Em CSS é #
+    em HTML é Class == Em CSS é .
+
+*/
+
+/*
+    Tudo que é acrescentado depois tem prioridade e como a class vem antes do ID, o conteudo do ID tem prioridade.
+
+*/
+
+body{
+    background-color: #f5dd7d9a;
+    
+}
+h1{
+    color: #403A21;
+}
+
+h1#h0{
+    text-align:center;
+    background-color: #756a3cb0;
+    color: white;
+}
+
+h2{
+    color: tomato;
+
+}
+
+p{ text-align: justify;
+
+}
+
+.basico{
+    color: teal;
+}
+.intermediario{
+    color: tomato;
+}
+.avancado{
+    color:darkred;
+}
+.personalizado{
+    background-color: rgba(148, 0, 211, 0.329);
+    color: black;
+    font-weight: bolder;
+    font-family: 'Qahiri', sans-serif;
+    font-size: 2em;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1em;
+            background: linear-gradient(to top, darkblue, black);
+        }
+        #container{
+            background-color: #e6e6e6;
+            border: 2px solid darkblue;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 120px auto 0px auto;
+            width: 420px;
+            height: 300px;
+            text-align: center;
+            
+        }
+
+        #container img{
+            margin: -60px auto 30px auto;
+            
+        }
+        input{
+            padding: 9px;
+            font-size: 1.1em;
+            padding-left: 40px;
+            border-radius: 10px;
+            background-color: white;
+            width: 70%;
+            margin: 0px auto 7px;
+            border:0px;
+        }
+        #ipt1{
+            background-image: url("imagens/icone-usuario.png");
+            background-repeat: no-repeat;
+            background-position: 5px;
+        }
+        #ipt2{
+            background-image: url("imagens/icone-cadeado.png");   
+            background-repeat: no-repeat;
+            background-position: 5px 
+        }
+        #btn{
+            margin-top: 15px;
+            padding: 8px ;
+            border-radius: 12px;
+            width:40% ;
+            background-image: linear-gradient(to bottom,  #277696, #004566 );
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="container">
+        <img src="imagens/perfil02.png" alt="">
+        <form >
+
+            <div id="dv1">
+                <input type="text" id="ipt1" placeholder="Digite seu e-mail">
+            </div>
+
+            <div id="dv2">
+                <input type="password" id="ipt2" placeholder="Digite sua senha">
+            </div>
+
+            <div id="dv3">
+                <input type="button" id="btn" value="Logar">
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

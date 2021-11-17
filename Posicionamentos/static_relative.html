@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (Static e Relative)</title>
+
+    <style>
+        body{
+            background-color: #007fc7;
+        }
+        #container{
+            background: #FFF;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 20px 20px 0px 0px;
+
+        }
+
+        h1{
+            position: static;
+        }
+        p{
+            border: 1px solid cadetblue;
+            width: 300px;
+            padding: 10px;
+            
+        }
+        .relative{
+            background-color: rgb(146, 200, 202);
+            position: relative;
+            left: 345px;
+            bottom: 128px;
+        }
+        /*
+            Position = muda o comprotamento de transição do elemtno. 
+
+            -Static = Padrão, sem comandos de locomoção.
+
+            -Relative = fornece opções de locomoção relativas a sua posição original. 
+
+            #top, right, bottom, left.
+        
+        
+        */
+
+    </style>
+</head>
+<body>
+     <div id="container">
+         <h1>
+             Posicionamentos
+        </h1>
+         <p> 
+             P1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis aperiam suscipit adipisci nam inventore eos, eum, molestiae tempore veniam natus eligendi consectetur neque pariatur at id culpa eaque quam est?
+        </p>
+
+         <p class="relative">
+             P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam est odit eius nam corporis officiis animi nostrum aut? Unde officiis consequatur cupiditate dolore optio enim voluptas at commodi explicabo.
+        </p>
+
+         <p>
+             P3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi illum veniam libero facere tempora vero ad voluptatum, vitae sit, beatae animi repudiandae molestias porro incidunt expedita quo tempore repellat.
+         </p>
+     </div>
+</body>
+</html>

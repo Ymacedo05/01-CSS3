@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+
+    <style>
+        @font-face {
+            font-family: Black ;
+            src: url("The\ Black\ Bible.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
+            @font-face {
+                font-family:"Romance";
+                src: url("Times-New-Romance.ttf") format("truetype");
+            }
+
+            @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+            /*
+                Tipos de format()
+                -opentype (otf)
+                -truetype (ttf)
+                -embedded-opentype
+                -truetype-aat (apple advanced typography)
+                -svg
+            
+            */
+        
+        
+        body{
+            font-family: "Romance";
+
+        }
+
+        h1{
+            font-family: "Black",Times-New-Romance;
+            font-size: 6em;
+        }
+        p{
+            font-family: 'Yomogi', cursive;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium eveniet fugit a ea quam reprehenderit. Natus hic molestias nemo maiores, eius nisi consequatur! Pariatur minima harum reprehenderit. Est, praesentium eius.</p>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 22px;
+        }
+
+        a {
+            color: firebrick;
+            text-decoration: none; /*Retirando as caracteristicas de link*/
+            
+        }
+
+        a:visited {
+            /*Pseudo-Classe || Links visitados*/
+            color: tomato;
+        }
+
+        a:hover{
+            /*Pseudo-Classe || Passar o mouse por cima.*/
+            color: purple;
+            text-decoration: underline; /*Sublinhado*/
+        }
+
+        a:active {
+            /*Pseudo-classe  || Clicar*/
+            color: orange;
+        }
+
+        a::after{
+            /*Pseudo-Elemento = mexe direto no conteudo|| Depois */
+            content: "♫";
+            color: rgb(10, 7, 5);
+
+
+        }
+        a::before{
+            /*Pseudo-Elemento = mexe direto no conteudo|| Antes */
+            content: "❣";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=m6cJaI1Z_v4" target="blank">Fairy tail</a> </li>
+        <li><a href="https://www.youtube.com/watch?v=iH_YJde1yps" target="blank">Dorohedoro</a></li>
+        <li><a href="https://www.youtube.com/watch?v=By_JYrhx-WY" target="blank">Tokyo Revergers</a></li>
+    </ul>
+
+    
+</body>
+</html>

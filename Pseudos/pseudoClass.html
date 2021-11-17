@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+
+        body{
+            font: normal 22px times;
+
+        }
+        div{
+            
+            font-weight: bolder; /*negrito*/
+            display: inline-block; /*Tudo na mesma linha*/
+            background-color: lightgray;
+            height: 200px;  /*Altura*/
+            width: 200px; /*Largura*/
+            text-align: center; 
+            border: 1px solid black; /*Conjunto de comandos para contorno*/
+            margin-top: 30px; /*Margem cima*/
+            margin-left: 20px; /*Margem esquerda*/
+
+
+        }
+        div:hover {
+            background-color: maroon; 
+            /*
+                -Pseudo-Classes: são estados em CSS. 
+                -Houver = Estado quando passamos o mouse por cima do elemento ou objeto. 
+            */
+        }
+    </style>
+</head>
+<body>
+    
+<div id="d1">01</div>
+<div id="d2">02</div>
+<div id="d3">03</div>
+
+    
+</body>
+</html>

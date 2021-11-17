@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação com abas</title>
+    
+
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            width: 720px;
+        }
+
+        ul li {
+            float: left;
+            
+
+
+        }
+
+        li a{
+            display: block;
+            padding: 0 2em;
+            line-height: 3em;
+            text-decoration: none;
+            background-color: #FF8C32;
+            color: white;
+            border-radius: 10px 10px 0px 0px;
+            border: 0.1px solid black;
+        }
+        ul a:hover{
+           
+            color: #894a1f;
+        }
+
+        ul #atual {
+            background-color: #FFB200;
+        }
+
+        ul #atual a{
+            background-color: #FFB200;
+        }
+    </style>
+</head>
+<body id="home">
+    <h2>Serviços</h2>
+    <nav>
+        <ul>
+            <li >
+                <a href="com_abas.html">
+                    Home
+                </a>
+            </li>
+            <li >
+                <a href="com_abas_pg2.html">
+                    Sobre
+                </a>
+            </li>
+            <li id="atual">
+                <a href="com_abas_pg3.html">
+                    Serviços
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Notícias
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Contato
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

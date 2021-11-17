@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relembrando Hover</title>
+    <style>
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 23px;
+        }
+
+        div > p{
+            display: none;
+            color: blueviolet;
+            background-color: black;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>
+            Isso não pode ser mostrado...
+        </p>
+    </div>
+    <p>Fim do exemplo.</p>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Menu_Vertical</title>
+    <style>
+
+        nav,ul{
+            margin: 0px;
+            padding: 0px;
+        }
+  
+        li{
+            list-style: none;
+        }
+
+        li>a{
+            display: block;
+            width: 200px;
+            height: 40px;
+            color: rgba(0, 0, 0, 0.555);
+            font-weight: bold;
+            text-indent: 30px;
+            text-decoration: none;
+            line-height: 40px;
+            background: #f7b600 url("imagens/menu.png");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+
+        li>a:hover{
+            color: white;
+            background-position: right bottom;
+            background-color: #f99200;
+        }
+
+        #home #lista01 .home a, 
+        #sobre #lista01 .sobre a{
+            color: white;
+            background-position: right bottom;
+            background-color: #f99200;
+        }
+    </style>
+</head>
+<body id="sobre">
+    <!--
+        Line-hight = Configura a altura da linha, podendo modificar o posicionamento do text verticalmente. 
+
+        Text-indent= Configura o espaçamento do paragrafo.
+    -->
+
+    <!--
+        Lista interativa
+        -Identifica em qual pagina estamos e deixa marcado no Menu de navegação. Otimo para quando estamos utilizando o CSS externo, pois usamos apenas um bloco de código para formatar todas as paginas.
+    -->
+    <h2>Sobre</h2>
+    <nav>
+        <ul id="lista01">
+            <li class="home"><a href="menu_vertical.html">Home</a></li>
+            <li class="sobre"><a href="menu_vertical_pg2.html">Sobre</a></li>
+            <li ><a href="">Serviços</a></li>
+            <li><a href="">Notícias</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

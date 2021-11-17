@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (Absolute e Fixed)</title>
+
+    <style>
+        body{
+            background-color: #007fc7;
+        }
+        #container{
+            background: #FFF;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 20px 20px 0px 0px;
+            position: relative;
+
+        }
+
+        h1{
+            position: static;
+        }
+        p{
+            border: 1px solid cadetblue;
+            width: 300px;
+            padding: 10px;
+            
+        }
+        .absolute{
+            background-color: rgb(146, 200, 202);
+            position: absolute;
+            left: 350px;
+            bottom: 138px;
+        }
+        .fixed{
+            background-color: white;
+            color: #007fc7;
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            text-align: center;
+            padding: 15px;
+            font: bold 18px times;
+
+            position: fixed;
+            bottom: 0px;
+            
+        }
+
+        span{
+            margin:0px; 
+        }
+        /*
+            Position = muda o comportamento de transição do elemento. 
+
+            -Absolute = fornece opções de locomoção com base em seu container contatato que, o container tenha um position diferente de Static [padrão]. Caso contrario, sua locomoção será baseada no corpo da pagina. 
+            
+            Detalhe 2 - Diferente do Relative, ele literalmente vira um objeto flutuante tendo sua posição ignorada pelos demais elementos. 
+
+            -Fixed = fornece opções de locomoção relativas a pagina e ignora a rolagem da mesma, permanecendo fixo no local programado. Também tem sua posição ignorada pelos demais elementos por estar flutuando.  
+
+            #top, right, bottom, left.
+        
+        
+        */
+
+    </style>
+</head>
+<body>
+     <div id="container">
+         <h1>
+             Posicionamentos
+        </h1>
+         <p> 
+             P1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis aperiam suscipit adipisci nam inventore eos, eum, molestiae tempore veniam natus eligendi consectetur neque pariatur at id culpa eaque quam est?
+        </p>
+
+         <p class="absolute">
+             P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam est odit eius nam corporis officiis animi nostrum aut? Unde officiis consequatur cupiditate dolore optio enim voluptas at commodi explicabo.
+        </p>
+
+         <p>
+             P3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id modi illum veniam libero facere tempora vero ad voluptatum, vitae sit, beatae animi repudiandae molestias porro incidunt expedita quo tempore repellat.
+         </p>
+     </div>
+
+     <div class="fixed">
+         <br> <br>
+         <span >
+             Iniciar Chat
+         </span>
+     </div>
+</body>
+</html>

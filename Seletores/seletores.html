@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        h1+p{
+            background-color: whitesmoke;
+        }
+        #h0 ~ p{
+            background-color: lemonchiffon;
+        }
+        /*
+            Irmão adjacente [+] = Seleciona o irmão X adjacente [depois] da tag mencionada 
+
+            Irmão geral [~] = Seleciona todos os irmãos X da tag mencionada
+
+            ID [#] = seleciona o elemento que tnha o ID mencionado.
+
+            Class [.] = seleciona os elmentos que contenham a classe especificada. 
+
+            Filho [>] = Seleciona uma tag filha de uma tag pai.
+
+            Descendente [ a frente da tag] = Seleciona qualquer elemento "X" que esteja dentro da tag mencionada.
+
+        */
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non voluptatem distinctio? Alias vero quas libero, adipisci ad pariatur nemo voluptas quasi ipsum, sit ipsa ex possimus ipsam, amet magnam.</p>
+    <p>P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi vero ullam sunt ea ut commodi facilis esse rerum dolore? Eaque sed harum distinctio maxime ea nihil laboriosam tempora totam.</p>
+
+    <hr>
+
+    <h1 id="h0">Olá Mundo</h1>
+    <p>P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non voluptatem distinctio? Alias vero quas libero, adipisci ad pariatur nemo voluptas quasi ipsum, sit ipsa ex possimus ipsam, amet magnam.</p>
+    <p>P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi vero ullam sunt ea ut commodi facilis esse rerum dolore? Eaque sed harum distinctio maxime ea nihil laboriosam tempora totam.</p>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+
+    <style>
+        body{
+            font-family: serif;
+            font-size: 1.5em;
+        }
+        h1{
+            background-color: darkgray;
+            height: 150px;
+            width: 600px;
+
+            border-width: 10px;
+            border-color: darkred;
+            border-style: solid;
+
+            border: 10px darkred solid;
+
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+
+            Shorthand 
+            padding: 10px; [se for o mesmo valor ]
+            padding: 10px 10px ; [1º cima e baixo, 2º direita e esquerda]
+            padding: 10px 10px 10px 10px;
+            */
+
+            margin-top:10px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+            margin-left: 10px;
+
+            margin: 10px auto 50px auto;
+            
+           /* 
+                margin: auto;  centraliza uma caixa. Da para usar o auto na direira e esquerda e deixar centralizado. 
+            */
+
+           outline-width: 10px; /*Contorno entre a borda e a margin*/
+           outline-style: dashed; /*Pontilhado ao invés de solido */
+           outline-color: black;
+
+           outline: 10px dashed black;
+
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkorange;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são exemplos de box-level, mas <a href="">os links são exemplos de caixas inline-level.</a> Vamos ver como isso funciona.</p>
+    
+</body>
+</html>

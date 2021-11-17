@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arredondamento com imagens</title>
+    <style>
+
+        *{
+            margin: 0px;
+        }
+        .caixa{
+            
+            /*
+            background-image: url("imagens/topo.png");
+            background-repeat: no-repeat;
+            background-position: left top;
+            */
+            width: 400px;
+            margin: 10px;
+            background: #dedede url("imagens/fundo-arredondamento.png") repeat-y left top;
+            
+        }
+        .caixa h2{
+            padding: 12px 20px 10px 20px;
+            background: url("imagens/topo2.png") no-repeat left top;
+        }
+
+        .caixa p{
+        padding: 10px 20px;
+
+        }
+        .caixa .ultimo{
+        background: url("imagens/baixo2.png") no-repeat left bottom;
+        height: 25px;
+        width: 400px;
+        
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="caixa">
+        <h2>Cabeçalho</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem, est labore odio error dignissimos! Sequi architecto at qui odit, doloremque, perspiciatis quia sit accusamus maxime, a quod obcaecati repudiandae!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste dicta quasi soluta omnis eaque unde, sequi, maxime similique aliquid repudiandae laudantium nulla debitis sapiente inventore perferendis totam labore dolorem.</p>
+
+        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet velit repellendus non voluptate aliquam recusandae tempore dolores reprehenderit harum accusamus eaque perferendis provident ad nihil aspernatur ducimus, eligendi ratione suscipit!</p>
+
+        <div class="ultimo"></div>
+    </div>
+    
+</body>
+</html>

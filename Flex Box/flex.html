@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        
+
+        body{
+            background-color: white;
+            color: white;
+        }
+
+        .item{
+            margin: 7px;
+            padding: 5px;
+            background-color:tomato;
+            text-align: center;
+            
+            
+            
+        }
+
+        .container{
+            background-color: white;
+            max-width: 450px;
+            min-width: 300px;
+            margin: 0px auto;
+            border: 1px solid #000;
+            height: 230px;
+             
+            
+        }
+
+        .flex
+        {
+            display: flex;
+            color: white;
+        }
+
+
+        /*   Flex-direction = direção dos elementos*/
+        .horizontal{
+            flex-direction: row; /*Esquerda para direita*/
+        }
+        .horizontalIn{
+            flex-direction: row-reverse; /*Direita para esquerda*/
+        }
+
+        .vertical{
+            flex-direction: column; /*cima  para baixo*/
+        }
+        .verticalIn{
+            flex-direction: column-reverse; /*Baixo  para cima*/
+        }
+/*========================================================*/
+        .quebra {
+            flex-wrap: wrap;
+        }
+
+                /*
+            flex-wrap = serev para determinar se haverá ou não a quebra de linha. 
+
+            wrap = quebra de linha
+            nowrap = sem quebra de linha [padrão]
+
+            wrap-reverse = quebra de linha com reversão de baixa para cima. 
+
+        */
+
+/*========================================================*/
+/*Flex-flow = junta a direção + a quebra*/
+        .fuxo-horizontal-quebra{
+            flex-flow: row wrap;
+        }
+
+        .fuxo-horizontal-sem-qubra{
+            flex-flow: row nowrap;
+        }
+/*========================================================*/
+/* Justify-content = Faz o alinhamento dos elementos pelo eixo principal dos elementos [row ou column - vertical ou horizontal].  */
+
+        .justify-content-inicio{
+            justify-content: flex-start;
+        /* posiciona os elementos no inicio do eixo*/
+        }
+
+        .justify-content-final{
+            justify-content: flex-end;
+        /* posiciona os elementos no final do eixo*/
+        }
+
+        .justify-content-centro{
+            justify-content: center;
+        /* posiciona os elementos no centro do eixo*/
+        }
+
+        .justify-content-space-between{
+            justify-content: space-between;
+        /* posiciona os elementos no inicio, outro no final e os demais organizados no centro com o mesmo espaçamento*/
+        }
+
+        .justify-content-space-around{
+            justify-content: space-around;
+        /* cria um espaçamento na direita e na esquerda dos itens. O espaçamento dos itens do centro é maior, pois possuí o espaçamento de dois elementos.*/
+        }
+/*=======================================================*/
+/*
+    Align-items = Alinhamento conforme o Eixo secundario. O Oposto do que está definido. Ex: flex-direction está definido como row, logo o Align-itemns alinhará na vertical ou column.
+*/
+.align-items-start{
+    align-items: flex-start;
+    /*inicio do eixo*/
+}
+.align-items-end{
+    align-items: flex-end;
+    /*final do eixo*/
+}
+.align-items-center{
+    align-items: center;
+    /*Centro do eixo*/
+}
+.align-items-base{
+    align-items: baseline;
+    /*onde está definido a baseline*/
+}
+/*=======================================================*/
+/*Flex-grow; 
+determina o tamanho do espaço que o item ocupará no container RESPEITANDO O TAMANHO DO CONTEUDO, OU SEJA, QUANTO MAIS CONTEUDO O ITEM TIVER, MAIS ESPAÇO ELE OCUPARÁ, MAS CASO OS ITENS TENHAM O MESMO CONTEUDO O TAMANHO DO GROW É QUE SERÁ LEVANDO EM CONSIDERAÇÃO.
+
+OBS1 = Como os itens ocuparam o espaço total do container, ANULA O Justify-content [alinhamento com base no eixo1]
+
+OBS 2 = Quanto maior o número, maior é espaço que o item sobre esse efeito ocupará sobre os demais itens se eles também estiverem com Flex-grow. Caso não estejam, independente do número [fora o 0] não fará diferença.*/
+
+
+
+.tam0{
+    flex-grow:0;
+    /*Ocupará somente os espaço necessário - [PADRÃO]*/
+}
+.tam1{
+    flex-grow:1;
+    /*Quanto maior o número, maior é espaço que ele ocupará sobre os demais itens*/
+}
+.tam2{
+    flex-grow:2;
+}
+.tam3{
+    flex-grow:3;
+}
+
+
+/*=======================================================*/
+/* 
+    flex-basis;
+    Diferente do Grow, ele não se importa com o tamanho do conteudo e deixa tudo ocupando o mesmo tamanho, podendo dar uma prioridade de leve utilizando o número 2. 
+
+    OBS1 = Manter o Basi em 0 e o Grow acima de 0 com o mesmo valor entre os itens para padronizar o tamanho.
+ */
+
+
+
+ .basiA{
+     flex-basis: auto;
+     /*Padrão = não padroniza, leva em consideração o tamanho do conteudo */
+ }
+ .basi0{
+     flex-basis:0;
+     /*todos tem o mesmo tamanho */
+ }
+ .basi1{
+     flex-basis: 1;   
+ }
+ .basis2{
+     flex-basis:2;
+ }
+/*=======================================================*/
+/*Order = determina a ordem dos elementos.*/
+
+.order0{
+    order: 0;
+}
+.order1{
+    order: 1;
+}
+.order2{
+    order: 2;
+}
+.order3{
+    order: 3;
+}
+/*=======================================================*/
+.align-content{
+    align-content: center;
+}
+/*=======================================================*/
+/*flex-shrink = Termina se haverá ou não redução. Quanto maior o número, mais o elemento diminuirá para se ajustar. 
+*/
+.reduzir0{
+    flex-shrink: 0;
+    /*Impede que os elementos se reduzam */
+}
+
+.reduzir1{
+    flex-shrink: 1;
+    /*[Padrão] = Faz com que os elementos se reduzam para caberem no container*/
+}
+.reduzir2{
+    flex-shrink: 2;
+    /*[Padrão] = Faz com que os elementos se reduzam para caberem no container*/
+}
+
+/*=======================================================*/
+/*Flex = propriedade que simplificação dos comandos ; grow, shrink e basis, sendo;  grow N, shrink 1, basis 0 e quando colocamos apenas um número, nãi alteramos os três itens apenas o grow, precisa expecificar um valor para cada, se necessário.*/
+/*=======================================================*/
+/* align-self = alinha o elemento com base no eixo 2.*/
+
+.self-ini{
+    align-self: flex-start;
+}
+.self-fim{
+    align-self: flex-end;
+}
+.self-cen{
+    align-self: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <!--
+        1 - Quando o container vira Flex, todos os itens dentro também viram.
+        2 - Container Flex ocupa todo o espaço na vertical disponivel.
+        3- Itens Flex ficam inline ocupando o espaço que precisam na horizontal e todo o espaço disponivel na vertical. 
+    -->
+
+    <div class="container flex horizontal  justify-content-space-between align-items-center quebra" >
+        <div class="item tam1 order0 reduzir1" >Linha 1</div>
+        <div class="item tam1 order1 reduzir1" >Linha 2</div>
+        <div class="item tam1 order3 reduzir1" >Linha 3</div>
+        
+        
+
+
+<!--      
+        
+        <div class="item">Linha 5</div>
+        <div class="item">Linha 6</div>
+        <div class="item">Linha 7</div>
+        <div class="item">Linha 8</div>
+        <div class="item">Linha 9</div>
+        <div class="item">Linha 10</div>
+-->  
+    </div>
+
+
+    
+</body>
+</html>

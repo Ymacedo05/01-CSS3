@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e Especifidade</title>
+    <style>
+
+        p{
+            color: tealh !important;
+        }
+
+        body{
+            border: 1px solid red;
+            color: darkred;
+        }
+        p{
+            color: violet;
+            /*Deveria ter prioridade, mas o important quebrou*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Herança e Especificidade</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque tempora magnam voluptate suscipit. Quam facere culpa at, hic ipsam asperiores, molestias quibusdam officiis sapiente obcaecati architecto fuga necessitatibus dignissimos.</p>
+
+    <!--
+        Herança
+        alguns comandos podem ser herdados por elementos dentro de outros elementos.
+
+        Especificidade
+        [ordem de importancia]
+        1 = inline
+        2= incorporado
+        3= externo
+
+        Obs1 -O comando que for preechido por ultimo terá prioridade
+        OBs2 -Quanto mais especifico for o comando, mais ele terá prioridade
+
+        OBs3 = Podemos usar o comando !important após o comando para atribuir prioridade ao mesmo.
+    -->
+    
+</body>
+</html>

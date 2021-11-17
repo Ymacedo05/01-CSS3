@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticar01</title>
+
+    <style>
+        *{
+            margin: 0px;
+            border: 0px;
+            list-style: none;
+        }
+
+        body{
+            background-color: lightgray;
+        }
+
+        header{
+            background-color: Black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.877);
+            color: white;
+
+            
+        }
+
+        nav > ul {
+            display: flex;
+            justify-content: space-between;
+            height: 200px;
+            align-items: flex-start;
+            
+            
+
+        }
+        
+        li{
+            padding: 10px;
+            
+            
+        }
+        li:hover{
+            background-color: lightsalmon;
+        }
+
+        #i{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Titulo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li style="order:1;">Item1</li>
+            <li id="i" style="order:2;">Item2</li>
+            <li style="order:3;">Item3</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

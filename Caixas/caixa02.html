@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        
+        body{
+            background-color: lightgray;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: justify;
+            margin: 20px 
+
+        }
+
+        header{
+            background-color: white;
+            padding-bottom: 10px;
+        }
+
+        main{
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+            /* superior esquerda - superior direita -inferior direita - inferior esquerda*/
+            box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.432);
+            
+        }
+        main > section > article > h2 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        main > section > article > p {
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+        footer{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+
+
+        header > h1 {
+            text-align: center;
+            background-color: black;
+            color: aqua;
+            padding: 10px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            background-color: rgb(179, 172, 172);
+            color: white;
+            margin-left: 20px;
+            padding: 5px;
+
+            box-shadow: 2px 2px 2px black;
+            /* Deslocamento Horizontal, Deslocamento vertical e espalhamento*/
+            /*box-shadow: inset 2px 2px 2px black = sobreamento interno.*/
+           
+
+        }
+        nav{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header >
+        <!-- Cabeçalho -->
+        <h1>Olá Mundo, Boa noite! </h1>
+        <nav>
+            <!-- Navegação -Menu-->
+            <a href="">Link A</a>
+            <a href="">Link B</a>
+            <a href="">Link C</a>
+            <a href="">Link D</a>
+
+        </nav>
+
+    </header>
+    
+    <main>
+        <!-- Conteudo principal-->
+        <section Noticas sobre Lorem>
+            <!--Separação de assuntos-  seções-->
+            <article>
+                <!--Artigo -->
+                <h2>Lorem A</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptates itaque libero, facilis asperiores aspernatur ratione deleniti tempora distinctio odio error laborum, rem similique! Pariatur magni quo delectus exercitationem debitis.</p>
+            </article>
+            <article>
+                <h2>Lorem B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae debitis ullam voluptatibus dolore? Alias voluptate perferendis inventore cum eaque odio velit magnam laborum doloribus, deserunt sint iste quaerat molestiae.</p>
+            </article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <!--Rodapé -->
+        <p>&copy YMCompany</p>
+    </footer>
+    
+</body>
+</html>

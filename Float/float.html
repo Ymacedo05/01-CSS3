@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: black;
+            color: white;
+
+        }
+        .conteudo{
+            border: 2px solid aqua;
+            box-shadow: 0px 0px 11px 4px aqua;
+            color: aqua;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+            float: right;
+            
+        }
+        .conteudo1{
+            border: 2px solid tomato;
+            box-shadow: 0px 0px 11px 4px tomato;
+            color: tomato;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+            float: left;
+            
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        main{
+            border: 1px solid magenta;
+            width: 600px;
+            background-color: maroon;
+            clear: both;
+        }
+
+        /*
+            float = faz com que o objeto flutue para direita ou esquerda. 
+
+            OBS1 = Quando os itens estiverem flutuando na mesma linha e a tela for reduzida retirando o espaço ocupados pelos elemntos, eles se ajustaram para a proxima linha na direção informada. 
+
+            OBS2 = Caso o elemento na linha de cima esteja ocupando um espaço maior na vertical, o elemento quebrará a linha para baixo mas não ficará no canto. [ficará em baixo no elemento 2 no exemplo]
+
+            OBS3 = Quando se acrescenta texto após um elemento flutuante, o texto permanecerá na mesma linha dos objetos, pois teoricamente é como se eles não estivessem lá. O problema é que estão e o texto é jogado para o lado. 
+
+            OBS4 = Elementos flutuantes são radioativos e afetam tudo dentro do conatainer impossibilitando que as coisas sem aplicadas normalmente, como bordas, textos e backgrounds. Para resolver isso, é neceessário acrscentar o comando clear em qualquer um dos elementos dentro do container, mesmo que seja um elamento vazio.
+        */
+
+        /*
+            Clear  = limpa a area poluida pelo float, para que os demais conteudos sejam inseridos abaixo dos elementos flutuantes. 
+
+            #left
+            #right
+            #both = ambos 
+
+
+
+        */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="conteudo1">Div 01</div>
+        <div class="conteudo">Div 02</div>
+        <div class="conteudo">Div 03</div>
+        <div class="clear"></div>
+    </main>
+
+    
+
+    <p class="clear">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum assumenda magni eaque obcaecati corporis, illum quo deleniti facere eius odit commodi provident alias, fugit suscipit recusandae repellat cumque dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis sunt non tenetur delectus eaque sapiente adipisci excepturi repellat? Eaque quod delectus quasi similique eveniet nemo aliquid expedita veritatis eius.</p>
+    
+</body>
+</html>
