@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Alianahmentos </title>
+
+    <style>
+
+    /*
+            ##ALINHAMENTOS 
+
+            ## alianhar o grid, relativo ao espaço fora do grid.
+
+                justify-content > alinhamento horizontal 
+                align-content > alinhamento vertical
+
+            opções :
+                start > posiciona no inicio. 
+                end > posiciona no fim.
+                center > posiciona ao centro.
+                space-between > separa os itens em inicio meio e fim.
+                space-around > cria uma margin com espaços não repetidos 
+                space-evenly > cria uma margin com espaços repetidos padronizando a distancia.
+
+            ex: justify-content: center; 
+
+
+
+            ## alianhar os items do nosso grid, em qualquer espaço disponivel, na célula que ele habitar.
+            
+                justify-items > alinhamento horizontal 
+                align-items > alinhamento vertical
+
+            
+                opções :
+                    start > posiciona no inicio. 
+                    end > posiciona no fim.
+                    center > posiciona ao centro.
+                    stretch > ocupa 100% do espaço disponivel 
+
+        
+            ## alianhar o próprio item em relação ao espaço disponivel na célula.
+
+                justify-self > alinhamento horizontal 
+                align-self > alinhamento vertical
+
+                opções :
+                start > posiciona no inicio. 
+                end > posiciona no fim.
+                center > posiciona ao centro.
+    */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            background-color: #23232f;
+            width: 100vw;
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+
+            grid-gap: 5px;
+
+
+            justify-items: center ;
+            align-items: center;
+        }
+
+        .container > div {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container > .diferente{
+            background-color: darkred;
+            justify-self: end;
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="diferente"></div>
+        
+    </div>
+</body>
+</html>

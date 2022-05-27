@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Introdução</title>
+
+    <style>
+    /*
+        #GRID
+
+        - Bidimensional 
+        - Divisão de toda a página em  linhas e colunas
+        - Colocar elementos onde quiser nessa divisão
+
+
+        ##PROPRIEDADES
+
+        #CONTAINER
+            -display:grid;  > inicia 
+
+            -grid-template-columns; > fatia a tela na quantidade de colunas desejadas.
+
+            -grid-template-rows;
+
+            -grid-gap; Atalho para os itens abaixo
+                -grid-row-gap; > espaçamento horizontal nos elementos 
+                -grid-column-gap; > espaçamento vertical nos elementos
+
+            -grid-template-areas; atalho para o fatiamento horizontal e vertical.
+
+
+        #ITEM 
+            -grid-column; //atalho 
+                -grid-column-start; a partir de que linha o elemento será posicionado.
+
+                -grid-column-end; Até onde o elemnto deverá ser posicionado.
+
+            -grid-row; // atalho 
+                -grid-row-start;
+                -grid-row-end;
+
+            -grid-area; cria um nome para ser chamado no grid-template-areas;
+    */
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #23232e;
+    }
+
+    header{
+        background-color: yellow;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        grid-area:h;
+    }
+
+    main{
+        background-color: cadetblue;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-area: m;
+    }
+
+    aside{
+        background-color: blueviolet;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-area: a;
+    }
+
+    footer{
+        background-color: brown;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: f;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 1fr; /* fr >> fração */
+        grid-template-rows: 20vh 70vh 10vh ;
+        grid-template-areas:  "h ." "m a" "f f"; /* Acrescenta um ponto ao espaços vazios*/
+        
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+
+        </header>
+
+        <main>
+
+        </main>
+
+        <aside>
+
+        </aside>
+
+        <footer>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
