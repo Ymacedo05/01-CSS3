@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Pratica 01</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            background-color: #23232e;
+            width: 100vw;
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 25vh 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-template-areas: "a a a" "b c d " "b e e";
+
+            align-items: center;
+
+            
+        }
+        .container div{
+            height: 90%;
+            width: 100%;
+        }
+
+        #a{
+           grid-area: a;
+           height: 90%;
+           align-self: center;
+        }
+        #b{
+            grid-area: b;
+        }
+        #c{
+            grid-area: c;
+        }
+        #d{
+            grid-area: d;
+        }
+        #e{
+            grid-area: e;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div style="background-color:yellow ;" id="a">A</div>
+        <div style="background-color:darkgreen ;" id="b">B</div>
+        <div style="background-color:darkorange ;" id="c">C</div>
+        <div style="background-color:azure ;" id="d">d</div>
+        <div style="background-color:blueviolet ;" id="e">e</div>
+    </div>
+</body>
+</html>
